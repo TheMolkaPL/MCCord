@@ -4,6 +4,7 @@ import com.programmingwizzard.mccord.discord.basic.DMessage;
 import com.programmingwizzard.mccord.discord.enums.DMessageType;
 import com.programmingwizzard.mccord.discord.tasks.ChatRepeater;
 import org.bukkit.event.EventHandler;
+import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
 
@@ -19,7 +20,7 @@ public class AsyncPlayerChatListener implements Listener {
         this.repeater = repeater;
     }
 
-    @EventHandler
+    @EventHandler(priority = EventPriority.MONITOR)
     public void onChat(AsyncPlayerChatEvent event) {
         DMessage dMessage = new DMessage(event.getPlayer(), event.getMessage(), DMessageType.DISCORD);
         this.repeater.addElement(dMessage);
