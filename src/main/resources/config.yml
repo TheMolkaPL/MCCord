@@ -11,10 +11,5 @@ configuration:
       chat-module:
         enabled: false
         channel-id: "id of text-channel"
-        bridge-settings:
-          server-to-discord:
-            status: true
-            message: "**%nickname**: %message"
-          discord-to-server:
-            status: true
-            message: "&8[&6Discord&8] &7%nickname: &6%message"
+        discord: "**%nickname**: %message"
+        minecraft: "&8[&6Discord&8] &7%nickname: &6%message"
