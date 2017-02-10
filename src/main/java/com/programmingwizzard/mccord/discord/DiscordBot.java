@@ -57,7 +57,15 @@ public class DiscordBot {
         // TODO
     }
 
-    public MCCord getMcCord() {
+    public MCCord getMCCord() {
         return mcCord;
+    }
+
+    public JDA getJDA() {
+        return jda;
+    }
+
+    public Configuration getConfiguration() {
+        return getMCCord().getConfiguration();
     }
 }
