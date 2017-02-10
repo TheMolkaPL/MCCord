@@ -1,0 +1,20 @@
+configuration:
+  enabled: false
+  bot:
+    token: "token"
+    game:
+      enabled: true
+      twitch: false
+      url: "https://github.com/ProgrammingWizzard/MCCord"
+      name: "Minecraft"
+    modules:
+      chat-module:
+        enabled: false
+        channel-id: "id of text-channel"
+        bridge-settings:
+          server-to-discord:
+            status: true
+            message: "**%nickname**: %message"
+          discord-to-server:
+            status: true
+            message: "&8[&6Discord&8] &7%nickname: &6%message"

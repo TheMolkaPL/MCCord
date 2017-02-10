@@ -1,0 +1,4 @@
+name: MCCord
+version: ${project.version}
+author: [https://github.com/ProgrammingWizzard/MCCord/contributors]
+main: com.programmingwizzard.mccord.MCCord
